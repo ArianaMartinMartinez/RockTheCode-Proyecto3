@@ -16,29 +16,11 @@ DISEÑO PROPUESTO: https://www.figma.com/design/gLRrcetLfS9KkG2o43qpfB/PROYECTO3
 
 ## Criterios
 
-[] El proyecto cumple con los requisitos mínimos del Proyecto 1 en cuanto al HTML y CSS
-
-    -- HTML
-
-    [X] Has creado una estructura HTML semántica donde priman los section y article frente a los div siempre y cuando sea correcto su uso. Estará el contenido envuelto en un main.
-
-    [X] La web cuenta con al menos un elemento header o un elemento footer para contenido de navegación o adicional.
-
-    -- CSS
-
-    [X] Se han aplicado estilos globales para añadir box-sizing: border-box; y eliminar el padding y margin del body.
-
-    [X] El posicionamiento de los elementos se ha realizado por medio de flex. En su defecto, se habrá podido una grid para esto.
-
-    [] La web cuenta con media queries para hacerla responsive, de forma que se ve el contenido correctamente en móvil menor de 375px y en "escritorio" mayor que mobile.
-
-    [] Punto adicional si haces la web adecuada para tablet, entre los rangos de 375px y 768px.
-
-    [X] Existen **variables de CSS** para los colores y tamaños más utilizados.
+[X] El proyecto cumple con los requisitos mínimos del Proyecto 1 en cuanto al HTML y CSS
 
 [] Web FULL RESPONSIVE
 
-[] Si no se encuentran imágenes con la frase introducida, se realizará otra petición con la palabra gatos y la sugerencia de utilizar otra frase o palabra para una búsqueda correcta
+[X] Si no se encuentran imágenes con la frase introducida, se realizará otra petición con la palabra gatos y la sugerencia de utilizar otra frase o palabra para una búsqueda correcta
 
 [X] El código está correctamente repartido en componentes
 

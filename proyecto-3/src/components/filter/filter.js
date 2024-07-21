@@ -17,3 +17,7 @@ input.addEventListener('change', (e) => {
     
     input.value = '';
 });
+
+export const changeInputValue = (value) => {
+    inputValue = value;
+}

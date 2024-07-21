@@ -1,20 +1,9 @@
 import { inputValue } from './src/components/filter/filter';
 import { printGallery } from './src/components/gallery/gallery';
+import { noDataSearch } from './src/components/noDataSearch/noDataSearch';
 import { createShowMoreButton, deleteShowMoreButton, page } from './src/components/showMore/showMore';
 import './style.css';
 
-/*
-https://ipixelphotography.netlify.app/
-https://igram-sr.netlify.app/
-https://arianoid-proyecto3.netlify.app/
-https://github.com/Quinteroo/fetch-gallery
-https://github.com/PaulaCR90/ProjectThree_WebDev
-
-https://github.com/Shuertad/M1_p4_pinterestapp
-https://pinterestapp.netlify.app/
-
-https://www.youtube.com/watch?v=QgVOFMLXyrs&ab_channel=C%C3%B3digoWeb
-*/
 
 const accessKey = "HK4yvMhRraOHwBjlNVmmJnHYAyXM9TZvw2mtbE36XJA";
 const apiUrl = "https://api.unsplash.com/search/photos";
@@ -37,14 +26,12 @@ export const getDataImages = async () => {
         const response = await fetch(`${apiUrl}?query=${inputValue}&page=${page}&client_id=${accessKey}`);
         const res = await response.json();
 
-        console.log(res);
-
         if(res.results.length>0) {
             for(let i=0; i<res.results.length; i++) {
                 data.push(res.results[i].urls.full);
             }
         } else {
-            console.log('No hay resultados para la consulta');
+            noDataSearch();
         }
 
         printGallery(data);
@@ -60,8 +47,6 @@ const defaultGallery = async () => {
     try {
         const response = await fetch(`${apiUrl}?query=crochet&page=1&per_page=20&client_id=${accessKey}`);
         const res = await response.json();
-
-        console.log(res);
 
         for(let i=0; i<res.results.length; i++) {
             data.push(res.results[i].urls.full);
