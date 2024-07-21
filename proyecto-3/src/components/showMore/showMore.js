@@ -6,15 +6,21 @@ const button = document.createElement('button');
 
 export const createShowMoreButton = () => {
     const app = document.getElementById('app');
-
-    const gallerySection = document.createElement('section');
-    gallerySection.id = 'gallery';
  
     button.textContent = 'Ver más';
     button.id = 'showMore';
     
-    app.appendChild(gallerySection);
     app.appendChild(button);
+}
+
+export const deleteShowMoreButton = () => {
+    if(document.querySelector('#showMore')) {
+        document.querySelector('#showMore').remove();
+    }
+}
+
+export const resetPage = () => {
+    page = 1;
 }
 
 button.addEventListener('click', () => {
