@@ -18,7 +18,7 @@ DISEÑO PROPUESTO: https://www.figma.com/design/gLRrcetLfS9KkG2o43qpfB/PROYECTO3
 
 [X] El proyecto cumple con los requisitos mínimos del Proyecto 1 en cuanto al HTML y CSS
 
-[] Web FULL RESPONSIVE
+[X] Web FULL RESPONSIVE
 
 [X] Si no se encuentran imágenes con la frase introducida, se realizará otra petición con la palabra gatos y la sugerencia de utilizar otra frase o palabra para una búsqueda correcta
 
