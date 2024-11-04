@@ -12,6 +12,7 @@
     "vite": "^5.3.1"
   },
   "dependencies": {
+    "proyecto-3": "file:",
     "unsplash-js": "^7.0.19"
   }
 }
